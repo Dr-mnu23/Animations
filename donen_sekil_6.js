@@ -13,7 +13,7 @@ function draw() {
     var g = map(i, 0, 20, 0, 255);
     var b = map(cos(frameCount/2), -1, 1, 250, 0);
     stroke(r, g, b);
-    rotate(frameCount);
+    rotate(frameCount/20);
     beginShape();
     for (var j = 0; j < 360; j += 72) {
       var rad = i * 7;
